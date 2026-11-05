@@ -1,118 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="220">
-  <defs>
-    <linearGradient id="cBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#111827" />
-    </linearGradient>
-    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#6366f1" />
-    </linearGradient>
-    <linearGradient id="greenAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#34d399" />
-      <stop offset="100%" stop-color="#10b981" />
-    </linearGradient>
-    <linearGradient id="purpleAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a855f7" />
-      <stop offset="100%" stop-color="#ec4899" />
-    </linearGradient>
-  </defs>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" width="100%" height="190">
   <style>
-    .card-title {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      fill: #f8fafc;
-      letter-spacing: 0.2px;
-    }
-    .card-sub {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-size: 12.5px;
-      fill: #94a3b8;
-    }
-    .stat-num {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-size: 32px;
-      font-weight: 800;
-      fill: #f8fafc;
-    }
-    .tag {
-      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-      font-size: 11.5px;
+    .card-header {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      font-size: 14px;
       font-weight: 600;
-      fill: #e2e8f0;
+      fill: #58a6ff;
     }
-    .label {
-      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-      font-size: 11px;
+    .card-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      font-size: 22px;
       font-weight: 700;
-      letter-spacing: 0.8px;
+      fill: #e6edf3;
+    }
+    .card-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      font-size: 12.5px;
+      fill: #8b949e;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      fill: #c9d1d9;
+    }
+    .meta-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      fill: #8b949e;
     }
   </style>
 
-  <!-- CARD 1: Experience & Focus -->
-  <g transform="translate(0, 8)">
-    <rect width="286" height="204" rx="14" fill="url(#cBg)" stroke="#1e293b" stroke-width="1.5" />
-    <rect x="0" y="0" width="286" height="4" rx="2" fill="url(#blueAccent)" />
-    <text x="24" y="34" class="label" fill="#38bdf8">EXPERIENCE</text>
-    <text x="24" y="76" class="stat-num">2+ Years</text>
-    <text x="24" y="100" class="card-sub">Commercial Frontend Development</text>
-    <line x1="24" y1="118" x2="262" y2="118" stroke="#1e293b" stroke-width="1" />
-    <text x="24" y="142" class="card-sub">• SPA &amp; SSR / SSG Applications</text>
-    <text x="24" y="164" class="card-sub">• Responsive &amp; Pixel-Perfect UI</text>
-    <text x="24" y="186" class="card-sub">• Type-Safe Architecture</text>
-  </g>
+  <!-- CARD 1: Experience & Role (X=0..288) -->
+  <rect x="1" y="4" width="286" height="180" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <text x="20" y="32" class="card-header">experience / profile</text>
+  <rect x="218" y="18" width="52" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="228" y="32" class="meta-text">Active</text>
 
-  <!-- CARD 2: Frameworks & Meta-Frameworks -->
-  <g transform="translate(307, 8)">
-    <rect width="286" height="204" rx="14" fill="url(#cBg)" stroke="#1e293b" stroke-width="1.5" />
-    <rect x="0" y="0" width="286" height="4" rx="2" fill="url(#greenAccent)" />
-    <text x="24" y="34" class="label" fill="#34d399">FRAMEWORKS &amp; SSR</text>
-    <text x="24" y="62" class="card-title">Vue &amp; React Ecosystems</text>
-    <text x="24" y="84" class="card-sub">Building reactive, high-performance apps</text>
+  <text x="20" y="68" class="card-title">2+ Years</text>
+  <text x="20" y="90" class="card-text">Frontend Developer</text>
+  <text x="20" y="110" class="card-text">SPA, SSR &amp; responsive web interfaces</text>
 
-    <!-- Vue 3 / Nuxt Row -->
-    <rect x="24" y="104" width="114" height="36" rx="8" fill="#1e293b" stroke="#10b981" stroke-opacity="0.4" />
-    <circle cx="42" cy="122" r="5" fill="#42d392" />
-    <text x="54" y="126" class="tag">Vue 3</text>
+  <!-- Bottom Meta Row like GitHub Repo Card -->
+  <circle cx="26" cy="156" r="5" fill="#3fb950" />
+  <text x="38" y="160" class="meta-text">Open to collaboration</text>
+  <text x="180" y="160" class="meta-text">TG: @Zhurravlev</text>
 
-    <rect x="148" y="104" width="114" height="36" rx="8" fill="#1e293b" stroke="#14b8a6" stroke-opacity="0.4" />
-    <circle cx="166" cy="122" r="5" fill="#00dc82" />
-    <text x="178" y="126" class="tag">Nuxt 3</text>
+  <!-- CARD 2: Frameworks & SSR (X=306..594) -->
+  <rect x="307" y="4" width="286" height="180" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <text x="326" y="32" class="card-header">stack / frameworks</text>
+  <text x="326" y="56" class="card-text">Primary ecosystems for production apps:</text>
 
-    <!-- React / Next Row -->
-    <rect x="24" y="150" width="114" height="36" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4" />
-    <circle cx="42" cy="168" r="5" fill="#38bdf8" />
-    <text x="54" y="172" class="tag">React</text>
+  <!-- Pills Grid -->
+  <rect x="326" y="72" width="118" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <circle cx="342" cy="88" r="5" fill="#41b883" />
+  <text x="354" y="92" class="pill-text">Vue 3</text>
 
-    <rect x="148" y="150" width="114" height="36" rx="8" fill="#1e293b" stroke="#94a3b8" stroke-opacity="0.4" />
-    <circle cx="166" cy="168" r="5" fill="#f8fafc" />
-    <text x="178" y="172" class="tag">Next.js</text>
-  </g>
+  <rect x="454" y="72" width="118" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <circle cx="470" cy="88" r="5" fill="#00dc82" />
+  <text x="482" y="92" class="pill-text">Nuxt</text>
 
-  <!-- CARD 3: Core Languages & Styling -->
-  <g transform="translate(614, 8)">
-    <rect width="286" height="204" rx="14" fill="url(#cBg)" stroke="#1e293b" stroke-width="1.5" />
-    <rect x="0" y="0" width="286" height="4" rx="2" fill="url(#purpleAccent)" />
-    <text x="24" y="34" class="label" fill="#c084fc">CORE &amp; STYLING</text>
-    <text x="24" y="62" class="card-title">Web Fundamentals</text>
-    <text x="24" y="84" class="card-sub">Clean code, modern CSS &amp; strong typing</text>
+  <rect x="326" y="114" width="118" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <circle cx="342" cy="130" r="5" fill="#61dafb" />
+  <text x="354" y="134" class="pill-text">React</text>
 
-    <!-- Core Grid -->
-    <rect x="24" y="104" width="114" height="36" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.4" />
-    <text x="42" y="126" class="tag" fill="#60a5fa">TypeScript</text>
+  <rect x="454" y="114" width="118" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <circle cx="470" cy="130" r="5" fill="#e6edf3" />
+  <text x="482" y="134" class="pill-text">Next.js</text>
 
-    <rect x="148" y="104" width="114" height="36" rx="8" fill="#1e293b" stroke="#eab308" stroke-opacity="0.4" />
-    <text x="166" y="126" class="tag" fill="#facc15">JavaScript</text>
+  <text x="326" y="166" class="meta-text">Component architecture • State &amp; SSR</text>
 
-    <rect x="24" y="150" width="74" height="36" rx="8" fill="#1e293b" stroke="#f97316" stroke-opacity="0.4" />
-    <text x="40" y="172" class="tag" fill="#fb923c">HTML5</text>
+  <!-- CARD 3: Languages & Styling (X=612..899) -->
+  <rect x="613" y="4" width="286" height="180" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <text x="632" y="32" class="card-header">stack / core-languages</text>
+  <text x="632" y="56" class="card-text">Core web technologies &amp; styling:</text>
 
-    <rect x="106" y="150" width="74" height="36" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4" />
-    <text x="125" y="172" class="tag" fill="#38bdf8">CSS3</text>
+  <rect x="632" y="72" width="118" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <circle cx="648" cy="88" r="5" fill="#3178c6" />
+  <text x="660" y="92" class="pill-text">TypeScript</text>
 
-    <rect x="188" y="150" width="74" height="36" rx="8" fill="#1e293b" stroke="#ec4899" stroke-opacity="0.4" />
-    <text x="207" y="172" class="tag" fill="#f472b6">SCSS</text>
-  </g>
+  <rect x="760" y="72" width="118" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <circle cx="776" cy="88" r="5" fill="#f1e05a" />
+  <text x="788" y="92" class="pill-text">JavaScript</text>
+
+  <rect x="632" y="114" width="76" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <circle cx="646" cy="130" r="4.5" fill="#e34c26" />
+  <text x="656" y="134" class="pill-text">HTML5</text>
+
+  <rect x="716" y="114" width="76" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <circle cx="730" cy="130" r="4.5" fill="#563d7c" />
+  <text x="740" y="134" class="pill-text">CSS3</text>
+
+  <rect x="800" y="114" width="78" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <circle cx="814" cy="130" r="4.5" fill="#c6538c" />
+  <text x="824" y="134" class="pill-text">SCSS</text>
+
+  <text x="632" y="166" class="meta-text">Strict typing • Semantic &amp; responsive UI</text>
 </svg>
