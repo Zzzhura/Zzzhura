@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 136" width="100%" height="136">
+  <style>
+    .header {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      fill: #e6edf3;
+    }
+    .lang-name {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      fill: #e6edf3;
+    }
+    .lang-pct {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      fill: #8b949e;
+    }
+    .item-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      font-size: 12.5px;
+      fill: #8b949e;
+    }
+    .item-val {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      font-size: 12.5px;
+      font-weight: 600;
+      fill: #e6edf3;
+    }
+  </style>
+
+  <!-- LEFT CARD: Most Used Languages (Native GitHub Language Bar style) -->
+  <rect x="1" y="4" width="440" height="128" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <text x="20" y="32" class="header">Languages &amp; Ecosystem Distribution</text>
+
+  <!-- Multi-color GitHub Language Bar (X=20..420, Total width=400) -->
+  <clipPath id="barClip">
+    <rect x="20" y="48" width="400" height="10" rx="5" />
+  </clipPath>
+  <g clip-path="url(#barClip)">
+    <!-- TypeScript 40% (160px) -->
+    <rect x="20" y="48" width="158" height="10" fill="#3178c6" />
+    <!-- Vue 25% (100px) -->
+    <rect x="180" y="48" width="98" height="10" fill="#41b883" />
+    <!-- React / TSX 20% (80px) -->
+    <rect x="280" y="48" width="78" height="10" fill="#61dafb" />
+    <!-- JavaScript 10% (40px) -->
+    <rect x="360" y="48" width="38" height="10" fill="#f1e05a" />
+    <!-- SCSS / CSS 5% (20px) -->
+    <rect x="400" y="48" width="20" height="10" fill="#c6538c" />
+  </g>
+
+  <!-- Legend Row 1 -->
+  <circle cx="26" cy="82" r="4.5" fill="#3178c6" />
+  <text x="36" y="86" class="lang-name">TypeScript</text>
+  <text x="104" y="86" class="lang-pct">40%</text>
+
+  <circle cx="156" cy="82" r="4.5" fill="#41b883" />
+  <text x="166" y="86" class="lang-name">Vue / Nuxt</text>
+  <text x="234" y="86" class="lang-pct">25%</text>
+
+  <circle cx="286" cy="82" r="4.5" fill="#61dafb" />
+  <text x="296" y="86" class="lang-name">React / Next</text>
+  <text x="374" y="86" class="lang-pct">20%</text>
+
+  <!-- Legend Row 2 -->
+  <circle cx="26" cy="108" r="4.5" fill="#f1e05a" />
+  <text x="36" y="112" class="lang-name">JavaScript</text>
+  <text x="104" y="112" class="lang-pct">10%</text>
+
+  <circle cx="156" cy="108" r="4.5" fill="#c6538c" />
+  <text x="166" y="112" class="lang-name">SCSS / CSS3</text>
+  <text x="246" y="112" class="lang-pct">5%</text>
+
+  <!-- RIGHT CARD: Development Focus & Contact Summary -->
+  <rect x="459" y="4" width="440" height="128" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <text x="478" y="32" class="header">Frontend Engineering Summary</text>
+
+  <text x="478" y="60" class="item-label">Commercial Experience:</text>
+  <text x="640" y="60" class="item-val">2+ Years</text>
+
+  <text x="478" y="84" class="item-label">Primary Architecture:</text>
+  <text x="640" y="84" class="item-val">SPA, SSR / SSG, Modular UI</text>
+
+  <text x="478" y="108" class="item-label">Direct Contact:</text>
+  <text x="640" y="108" class="item-val" fill="#58a6ff">t.me/Zhurravlev (@Zhurravlev)</text>
+</svg>

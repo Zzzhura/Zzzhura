@@ -39,9 +39,8 @@ I work across both **Vue (Vue 3, Nuxt)** and **React (React, Next.js)** ecosyste
 
 ---
 
-### GitHub Activity
+### Languages & Summary
 
-<p align="left">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Zzzhura&show_icons=true&bg_color=0d1117&border_color=30363d&title_color=58a6ff&icon_color=8b949e&text_color=c9d1d9&border_radius=6" alt="GitHub Stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zzzhura&layout=compact&bg_color=0d1117&border_color=30363d&title_color=58a6ff&text_color=c9d1d9&border_radius=6" alt="Top Languages" />
+<p align="center">
+  <img src="./assets/stats.svg?v=1" alt="Languages and Engineering Summary" width="100%" />
 </p>
