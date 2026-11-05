@@ -13,8 +13,8 @@
     </linearGradient>
 
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.98" />
     </linearGradient>
 
     <radialGradient id="glow1" cx="20%" cy="20%" r="50%">
@@ -62,96 +62,75 @@
       font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
       font-size: 12px;
     }
-    .pulse {
-      animation: pulseAnim 3s infinite ease-in-out;
-    }
-    .float {
-      animation: floatAnim 5s infinite ease-in-out;
-    }
-    @keyframes pulseAnim {
-      0%, 100% { opacity: 0.45; }
-      50% { opacity: 1; }
-    }
-    @keyframes floatAnim {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-5px); }
-    }
   </style>
 
   <!-- Main Background -->
-  <rect width="900" height="280" rx="18" fill="url(#bg)" />
-  <rect width="900" height="280" rx="18" fill="url(#grid)" />
-  <rect width="900" height="280" rx="18" fill="url(#glow1)" />
-  <rect width="900" height="280" rx="18" fill="url(#glow2)" />
+  <rect x="0" y="0" width="900" height="280" rx="18" fill="url(#bg)" />
+  <rect x="0" y="0" width="900" height="280" rx="18" fill="url(#grid)" />
+  <rect x="0" y="0" width="900" height="280" rx="18" fill="url(#glow1)" />
+  <rect x="0" y="0" width="900" height="280" rx="18" fill="url(#glow2)" />
   <rect x="1" y="1" width="898" height="278" rx="17" fill="none" stroke="#334155" stroke-opacity="0.6" stroke-width="1.5" />
 
-  <!-- Left Content -->
-  <g transform="translate(44, 48)">
-    <!-- Status Pill -->
-    <rect x="0" y="0" width="215" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
-    <circle cx="16" cy="14" r="4.5" fill="#4ade80" class="pulse" />
-    <text x="28" y="18" class="badge-text">2+ YEARS OF EXPERIENCE</text>
+  <!-- Left Content (Absolute Coordinates) -->
+  <!-- Status Pill -->
+  <rect x="44" y="48" width="215" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <circle cx="60" cy="62" r="4.5" fill="#4ade80">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite" />
+  </circle>
+  <text x="72" y="66" class="badge-text">2+ YEARS OF EXPERIENCE</text>
 
-    <!-- Name & Role -->
-    <text x="0" y="74" class="title">Ivan Zhuravlev</text>
-    <text x="0" y="103" class="subtitle">Frontend Developer • UI &amp; Web Architecture</text>
+  <!-- Name & Role -->
+  <text x="44" y="122" class="title">Ivan Zhuravlev</text>
+  <text x="44" y="151" class="subtitle">Frontend Developer • UI &amp; Web Architecture</text>
 
-    <!-- Description -->
-    <text x="0" y="135" class="desc">Crafting fast, accessible, and scalable web interfaces with</text>
-    <text x="0" y="155" class="desc">TypeScript, Vue 3 / Nuxt, and React / Next.js ecosystems.</text>
+  <!-- Description -->
+  <text x="44" y="183" class="desc">Crafting fast, accessible, and scalable web interfaces with</text>
+  <text x="44" y="203" class="desc">TypeScript, Vue 3 / Nuxt, and React / Next.js ecosystems.</text>
 
-    <!-- Tech Stack Pills -->
-    <g transform="translate(0, 176)">
-      <rect x="0" y="0" width="88" height="26" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.5" />
-      <text x="11" y="17" class="badge-text" fill="#60a5fa">TypeScript</text>
+  <!-- Tech Stack Pills -->
+  <rect x="44" y="224" width="88" height="26" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.5" />
+  <text x="55" y="241" class="badge-text" fill="#60a5fa">TypeScript</text>
 
-      <rect x="96" y="0" width="62" height="26" rx="6" fill="#1e293b" stroke="#4ade80" stroke-opacity="0.5" />
-      <text x="110" y="17" class="badge-text" fill="#4ade80">Vue 3</text>
+  <rect x="140" y="224" width="62" height="26" rx="6" fill="#1e293b" stroke="#4ade80" stroke-opacity="0.5" />
+  <text x="154" y="241" class="badge-text" fill="#4ade80">Vue 3</text>
 
-      <rect x="166" y="0" width="58" height="26" rx="6" fill="#1e293b" stroke="#2dd4bf" stroke-opacity="0.5" />
-      <text x="180" y="17" class="badge-text" fill="#2dd4bf">Nuxt</text>
+  <rect x="210" y="224" width="58" height="26" rx="6" fill="#1e293b" stroke="#2dd4bf" stroke-opacity="0.5" />
+  <text x="224" y="241" class="badge-text" fill="#2dd4bf">Nuxt</text>
 
-      <rect x="232" y="0" width="62" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.5" />
-      <text x="245" y="17" class="badge-text" fill="#38bdf8">React</text>
+  <rect x="276" y="224" width="62" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.5" />
+  <text x="289" y="241" class="badge-text" fill="#38bdf8">React</text>
 
-      <rect x="302" y="0" width="70" height="26" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-opacity="0.5" />
-      <text x="314" y="17" class="badge-text" fill="#f8fafc">Next.js</text>
-    </g>
-  </g>
+  <rect x="346" y="224" width="70" height="26" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-opacity="0.5" />
+  <text x="358" y="241" class="badge-text" fill="#f8fafc">Next.js</text>
 
-  <!-- Right Code Card (outer group holds X/Y coordinates, inner group animates Y) -->
-  <g transform="translate(544, 38)">
-    <g class="float">
-      <rect x="0" y="0" width="316" height="204" rx="14" fill="url(#cardBg)" stroke="#475569" stroke-opacity="0.55" stroke-width="1.2" />
-      <!-- Window Controls -->
-      <circle cx="20" cy="20" r="5" fill="#f87171" />
-      <circle cx="36" cy="20" r="5" fill="#fbbf24" />
-      <circle cx="52" cy="20" r="5" fill="#4ade80" />
-      <text x="120" y="24" class="code-text" fill="#64748b">developer.ts</text>
-      <line x1="0" y1="36" x2="316" y2="36" stroke="#334155" stroke-opacity="0.6" />
+  <!-- Right Code Card (Absolute Coordinates: X=544, Y=38) -->
+  <rect x="544" y="38" width="316" height="204" rx="14" fill="url(#cardBg)" stroke="#475569" stroke-opacity="0.55" stroke-width="1.2" />
+  <circle cx="564" cy="58" r="5" fill="#f87171" />
+  <circle cx="580" cy="58" r="5" fill="#fbbf24" />
+  <circle cx="596" cy="58" r="5" fill="#4ade80" />
+  <text x="664" y="62" class="code-text" fill="#64748b">developer.ts</text>
+  <line x1="544" y1="74" x2="860" y2="74" stroke="#334155" stroke-opacity="0.6" />
 
-      <!-- Code Content -->
-      <text x="20" y="62" class="code-text">
-        <tspan fill="#c084fc">const</tspan> <tspan fill="#38bdf8">developer</tspan> <tspan fill="#94a3b8">=</tspan> <tspan fill="#fbbf24">{</tspan>
-      </text>
-      <text x="36" y="84" class="code-text">
-        <tspan fill="#e2e8f0">name:</tspan> <tspan fill="#4ade80">'Ivan Zhuravlev'</tspan><tspan fill="#94a3b8">,</tspan>
-      </text>
-      <text x="36" y="106" class="code-text">
-        <tspan fill="#e2e8f0">role:</tspan> <tspan fill="#4ade80">'Frontend Developer'</tspan><tspan fill="#94a3b8">,</tspan>
-      </text>
-      <text x="36" y="128" class="code-text">
-        <tspan fill="#e2e8f0">experience:</tspan> <tspan fill="#f472b6">'2+ years'</tspan><tspan fill="#94a3b8">,</tspan>
-      </text>
-      <text x="36" y="150" class="code-text">
-        <tspan fill="#e2e8f0">core:</tspan> <tspan fill="#94a3b8">[</tspan><tspan fill="#4ade80">'Vue 3'</tspan><tspan fill="#94a3b8">, </tspan><tspan fill="#38bdf8">'React'</tspan><tspan fill="#94a3b8">, </tspan><tspan fill="#60a5fa">'TS'</tspan><tspan fill="#94a3b8">],</tspan>
-      </text>
-      <text x="36" y="172" class="code-text">
-        <tspan fill="#e2e8f0">telegram:</tspan> <tspan fill="#38bdf8">'@Zhurravlev'</tspan>
-      </text>
-      <text x="20" y="192" class="code-text">
-        <tspan fill="#fbbf24">}</tspan><tspan fill="#94a3b8">;</tspan>
-      </text>
-    </g>
-  </g>
+  <!-- Code Content -->
+  <text x="564" y="100" class="code-text">
+    <tspan fill="#c084fc">const</tspan> <tspan fill="#38bdf8">developer</tspan> <tspan fill="#94a3b8">=</tspan> <tspan fill="#fbbf24">{</tspan>
+  </text>
+  <text x="580" y="122" class="code-text">
+    <tspan fill="#e2e8f0">name:</tspan> <tspan fill="#4ade80">'Ivan Zhuravlev'</tspan><tspan fill="#94a3b8">,</tspan>
+  </text>
+  <text x="580" y="144" class="code-text">
+    <tspan fill="#e2e8f0">role:</tspan> <tspan fill="#4ade80">'Frontend Developer'</tspan><tspan fill="#94a3b8">,</tspan>
+  </text>
+  <text x="580" y="166" class="code-text">
+    <tspan fill="#e2e8f0">experience:</tspan> <tspan fill="#f472b6">'2+ years'</tspan><tspan fill="#94a3b8">,</tspan>
+  </text>
+  <text x="580" y="188" class="code-text">
+    <tspan fill="#e2e8f0">core:</tspan> <tspan fill="#94a3b8">[</tspan><tspan fill="#4ade80">'Vue 3'</tspan><tspan fill="#94a3b8">, </tspan><tspan fill="#38bdf8">'React'</tspan><tspan fill="#94a3b8">, </tspan><tspan fill="#60a5fa">'TS'</tspan><tspan fill="#94a3b8">],</tspan>
+  </text>
+  <text x="580" y="210" class="code-text">
+    <tspan fill="#e2e8f0">telegram:</tspan> <tspan fill="#38bdf8">'@Zhurravlev'</tspan>
+  </text>
+  <text x="564" y="230" class="code-text">
+    <tspan fill="#fbbf24">}</tspan><tspan fill="#94a3b8">;</tspan>
+  </text>
 </svg>

@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Hero Banner -->
-  <img src="./assets/banner.svg" alt="Ivan Zhuravlev — Frontend Developer" width="100%" />
+  <img src="./assets/banner.svg?v=2" alt="Ivan Zhuravlev — Frontend Developer" width="100%" />
 
   <br />
 
